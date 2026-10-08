@@ -124,15 +124,45 @@ The pituitary somatotroph produces growth hormone (GH1), which enters the bloods
 
 ## 9. Answers to laboratory questions
 
-1. **Sender cell and context:** Pituitary somatotroph, acting in the anterior pituitary in the context of growth and metabolism regulation.
-2. **Signaling molecule and evidence:** GH1 (growth hormone). HPA shows single-cell enrichment in somatotrophs (tau 1.00), protein-level evidence, and a predicted secreted location.
-3. **Receptor and receiver cell:** GHR on adipocytes (adipocyte-enriched in HPA single-cell data).
-4. **Type of signaling:** Endocrine. GH1 is secreted into the bloodstream and acts on distant cells.
-5. **Most relevant STRING proteins:** JAK2 (kinase associated with GHR), STAT5A and STAT5B (transcription factors carrying the signal to the nucleus), IGF1 (downstream growth effector) and SOCS2 (negative feedback on GHR).
-6. **Enriched process:** Growth hormone receptor signaling pathway (GO:0060396, FDR 6.37e-17) and growth hormone receptor signaling via JAK-STAT (GO:0060397, FDR 1.04e-08), consistent with the proposed mechanism.
-7. **IntAct result:** Four GH1-GHR records, all annotated as direct interaction, supported by X-ray diffraction (PMIDs 9353194, 8943276) and fluorescence spectroscopy (PMID 31279174), in vitro, MI score 0.73.
-8. **Strongly supported vs. inferred:** *Strongly supported:* GH1 production by somatotrophs (HPA), GH1 as ligand and GHR as receptor (OmniPath), direct GH1-GHR binding (IntAct), and the JAK-STAT association (STRING/GO). *Inferred:* that adipocytes receive the signal in vivo from somatotrophs, that JAK2/STAT5 relays it in adipocytes, that STAT5 drives IGF1 and lipid-metabolism changes, and that SOCS2 is induced as feedback. GHR-JAK2 had no IntAct record.
-9. **Expected response in the receiver cell:** Changes in lipid metabolism and growth-related gene expression. GH binding to GHR activates JAK2 and STAT5, which regulate gene transcription (including IGF1), and GH is known to stimulate lipolysis in adipocytes. SOCS2 provides negative feedback that limits the signal.
+**1. What sender cell did you choose, and in what tissue or biological context does it act?**
+
+I chose the pituitary somatotroph. It acts in the anterior pituitary gland in the context of growth and metabolism regulation.
+
+**2. What signaling molecule did you identify, and what evidence supports its production or presentation by the sender cell?**
+
+The signaling molecule is GH1 (growth hormone). HPA shows GH1 is cell type enriched in somatotrophs (tau specificity score 1.00), with protein-level evidence and a predicted secreted location.
+
+**3. What receptor receives the signal, and which receiver cell did you select?**
+
+The receptor is GHR (growth hormone receptor). I selected the adipocyte as the receiver cell, because HPA single-cell data show GHR is group enriched in adipocytes.
+
+**4. What type of cell-to-cell signaling is represented: paracrine, endocrine, autocrine, or contact-dependent?**
+
+Endocrine signaling. GH1 is secreted into the bloodstream and acts on distant target cells.
+
+**5. Which proteins in your STRING network appear most relevant to the receptor-associated response? Explain briefly.**
+
+- **JAK2:** the kinase associated with GHR (OmniPath GHR → JAK2).
+- **STAT5A and STAT5B:** transcription factors that carry the signal to the nucleus.
+- **IGF1:** a downstream growth-related effector.
+- **SOCS2:** a negative feedback regulator (OmniPath SOCS2 ⊣ GHR).
+
+**6. What enriched pathway or biological process is consistent with your proposed mechanism?**
+
+Growth hormone receptor signaling pathway (GO:0060396, FDR 6.37e-17) and growth hormone receptor signaling pathway via JAK-STAT (GO:0060397, FDR 1.04e-08). Both match the proposed GH1 → GHR → JAK2 → STAT5 mechanism.
+
+**7. What did IntAct show for the molecular interaction you examined? What type of evidence was reported?**
+
+IntAct showed four GH1-GHR records (UniProt P01241 and P10912), all annotated as direct interaction, with an MI score of 0.73. The evidence came from X-ray diffraction (PMIDs 9353194 and 8943276) and fluorescence spectroscopy (PMID 31279174), all in vitro with human proteins. No GHR-JAK2 record was found in IntAct.
+
+**8. Which parts of your final model are strongly supported, and which parts remain an inference?**
+
+- **Strongly supported:** GH1 production by somatotrophs (HPA), GH1 as ligand and GHR as receptor (OmniPath), direct GH1-GHR binding (IntAct), and the JAK-STAT association (STRING/GO).
+- **Inferred:** that adipocytes receive this signal from somatotrophs in vivo, that JAK2/STAT5 relays it in adipocytes, that STAT5 drives IGF1 and lipid-metabolism changes, and that SOCS2 is induced as feedback. The GHR-JAK2 link has no IntAct record and rests on OmniPath and STRING.
+
+**9. What cellular response is expected in the receiver cell, and why?**
+
+Changes in lipid metabolism and growth-related gene expression. GH binding to GHR activates JAK2 and STAT5, which regulate gene transcription (including IGF1), and GH is known to stimulate lipolysis in adipocytes. SOCS2 provides negative feedback that limits the signal.
 
 ## 10. References and database links
 
