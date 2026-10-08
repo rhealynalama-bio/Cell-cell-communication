@@ -1,1 +1,14 @@
-
+source_database,molecule_a,molecule_b,relationship,evidence_detail,reference_or_score
+HPA,GH1,Somatotroph,cell type enriched,tau 1.00; protein evidence; predicted secreted,proteinatlas.org/ENSG00000259384-GH1/single+cell
+HPA,GHR,Adipocyte,group enriched (adipocytes and myocytes),tau 0.66; protein evidence,proteinatlas.org (GHR)
+OmniPath,GH1,GHR,ligand -> receptor (stimulation),SignaLink_function: GH1 ligand / GHR receptor,41 references
+OmniPath,GHR,JAK2,stimulation,BioGRID; Cui2007; HPRD and others,15 references
+OmniPath,SOCS2,GHR,inhibition,BioGRID; HINT; HPRD and others,12 references
+OmniPath,GH1,PRLR,stimulation (alternative receptor),CellCall; CellChatDB; CellTalkDB and others,18 references
+STRING,7-protein network,,functional association,7 nodes; 21 edges; expected 1,PPI enrichment p < 1.0e-16
+STRING,GO:0060396,,growth hormone receptor signaling pathway,7 of 21 proteins,FDR 6.37e-17
+STRING,GO:0060397,,growth hormone receptor signaling via JAK-STAT,4 of 11 proteins,FDR 1.04e-08
+IntAct,GH1,GHR,direct interaction,fluorescence spectroscopy; in vitro; EBI-21943371,PMID 31279174; MI 0.73
+IntAct,GH1,GHR,direct interaction,x-ray diffraction; in vitro; EBI-1026633,PMID 9353194; MI 0.73
+IntAct,GHR,GH1,direct interaction,x-ray diffraction; in vitro; EBI-1026225 and EBI-1026236,PMID 8943276; MI 0.73
+IntAct,GHR,JAK2,no IntAct record found,not shown among GHR interactors in the search,n/a
