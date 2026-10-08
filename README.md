@@ -1,6 +1,7 @@
 # Cell-to-Cell Communication: Pituitary Somatotroph → GH1 → GHR → Adipocyte
 
-**Author:** Rhealyn F. Alama
+**Name:** Rhealyn F. Alama
+
 **Sender cell:** Pituitary somatotroph (Homo sapiens)
 
 ## 1. Title and biological question
