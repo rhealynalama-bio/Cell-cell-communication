@@ -119,7 +119,7 @@ OmniPath is not cell-type specific, so it was used for ligand-receptor annotatio
 
 ![Final model](Figures/05_final_model.png)
 
-**Interpretation (about 215 words):**
+**Interpretation:**
 The pituitary somatotroph produces growth hormone (GH1), which enters the bloodstream and acts as an endocrine signal. HPA shows GH1 is cell type enriched in somatotrophs (tau 1.00), with protein-level evidence and a predicted secreted location. OmniPath annotates GH1 as a ligand and GHR as a receptor, with a GH1 → GHR interaction supported by 41 references. IntAct lists four GH1-GHR records annotated as direct interaction (X-ray diffraction and fluorescence spectroscopy, MI score 0.73), supporting physical binding in vitro. HPA shows GHR is group enriched in adipocytes and myocytes, so I chose the adipocyte as the receiver cell, although GHR is broadly expressed (tau 0.66). In STRING, GHR, GH1, JAK2, STAT5A, STAT5B, IGF1 and SOCS2 formed a fully connected network (21 edges, PPI enrichment p < 1e-16) enriched for growth hormone receptor signaling via JAK-STAT (FDR 1.04e-08). Strongly supported: GH1 production by somatotrophs, GH1-GHR binding, and the JAK-STAT association. Inferred: that this pathway operates in adipocytes, that STAT5 drives IGF1 and lipid-metabolism changes there, and that SOCS2 is induced as feedback. IntAct returned no GHR-JAK2 record, which means no record was found, not that no interaction exists. Because I chose the proteins myself, the network's high connectivity is partly expected.
 
 ## 9. Answers to laboratory questions
